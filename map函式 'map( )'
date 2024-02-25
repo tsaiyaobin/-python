@@ -1,0 +1,14 @@
+#map（） 會根據提供的函數對指定序列做映射。
+
+#第一個參數 function 以參數序列中的每一個元素調用 function 函數，返回包含每次 function 函數返回值的新清單。
+
+#語法:map(function, iterable, ...)
+
+#function -- 函數 , iterable -- 一個或多個序列
+
+
+#三數找最大值
+
+a,b,c=list(map(int,input().split()))
+max1=max(a,b,c)
+print(max1)
