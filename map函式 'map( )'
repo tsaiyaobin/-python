@@ -7,8 +7,19 @@
 #function -- 函數 , iterable -- 一個或多個序列
 
 
-#三數找最大值
+# 三數找最大值
 
 a,b,c=list(map(int,input().split()))
 max1=max(a,b,c)
 print(max1)
+
+# 計算平方數
+def square(x) :        
+    return x ** 2
+
+a=list(map(int,input().split()))
+print(list(map(square,a)))
+
+input:1 3 5 7
+output:[1, 9, 25, 49]
+
