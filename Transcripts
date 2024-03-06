@@ -1,0 +1,21 @@
+stack=[]
+b=[]
+x=1
+for i in range(4):
+    name = input('請輸入姓名:')
+    score1 = float(input('請輸入微積分成績:'))
+    score2 = float(input('請輸入線性代數成績:'))
+    score3 = float(input('請輸入離散數學成績:'))
+    score4 = float(input('請輸入機率統計成績:'))
+    print()
+    total = score1+score2+score3+score4
+    average = (score1+score2+score3+score4)/4
+    b.append(total)
+    stack.append([name,score1,score2,score3,score4,total,average,0])
+while x!=5:
+    n=b.index(max(b))
+    stack[n][7]=x
+    b[n]=0
+    x+=1
+for row in stack:
+    print(row)
